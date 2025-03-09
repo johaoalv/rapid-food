@@ -8,7 +8,8 @@ from flask_cors import CORS
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}})  # Permite comunicación con el frontend
+CORS(app, resources={r"/api/*": {"origins": "*"}}, supports_credentials=True)
+
 
 @app.route("/api/pedido", methods=["POST"])
 def pedido():
