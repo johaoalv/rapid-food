@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "https://rapid-food-production.up.railway.app/"; 
+const API_BASE_URL = "https://rapid-food-production.up.railway.app/api"; 
 
 const axiosInstance = axios.create({
   baseURL: API_BASE_URL,
